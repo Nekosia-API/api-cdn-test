@@ -23,6 +23,8 @@
                     nekoImg.alt = `ID: ${json.id}`;
                     nekoImg.title = json.attribution.copyright;
                     nekoImg.style.boxShadow = `0 0 22px ${json.colors.main}`;
+                } else {
+                    alert('Request failed, please try again.')
                 }
             } catch (err) {
                 console.error(err);
